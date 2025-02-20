@@ -1,0 +1,12 @@
+services:
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: rootroot
+      MYSQL_TCP_PORT: 3306
+    ports:
+      - "127.0.0.1:3306:3306"
+    # volumes:
+    #   - mydb:/var/lib/mysql
+# volumes:
+#   mydb:

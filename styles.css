@@ -1,0 +1,74 @@
+body {
+    margin: 0%;
+    background-color: navy;
+}
+@keyframes entry {
+    from {
+        translate: 0px -25px;
+        opacity: 0;
+    }
+    to {
+        translate: 0px 0px;
+        opacity: 1;
+    }
+}
+.mainpan {
+    padding: 150px;
+    text-align: center;
+    h1 {
+        color: white;
+        font-size: 48pt;
+        margin: 0%;
+        opacity: 0;
+        animation-name: entry;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
+    p {
+        color: white;
+        font-size: 16pt;
+        margin: 0%;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation-name: entry;
+        animation-duration: 0.5s;
+        animation-delay: 0.1s;
+        animation-fill-mode: forwards;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 14pt;
+        display: inline-block;
+        padding: 13px;
+        margin: 10px;
+        background-color: blue;
+        border-radius: 25px;
+        width: 7%;
+        transition:
+            transform 0.2s,
+            background-color 0.2s;
+        opacity: 0;
+        animation-name: entry;
+        animation-duration: 0.5s;
+        animation-delay: 0.2s;
+        animation-fill-mode: forwards;
+    }
+    a:hover {
+        transform: scale(1.1);
+    }
+    a:active {
+        transform: scale(1);
+        background-color: #0000cf;
+    }
+}
+.loginform {
+    text-align: center;
+    padding: 25%;
+    input[type="text"],
+    input[type="password"] {
+        width: 30%;
+        padding: 10px;
+    }
+}
